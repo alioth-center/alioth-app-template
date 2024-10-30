@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  akasha-whisper:
+    container_name: alioth-app
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "10000:10000"
+    volumes:
+      - ./config/config.yaml:/app/config/config.yaml
+      - ./log:/app/log
+    environment:
+      - AC_SERVICE=alioth-app

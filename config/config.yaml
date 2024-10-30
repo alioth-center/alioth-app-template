@@ -1,0 +1,17 @@
+http_engine:
+  serve_url: '/v1' # serve url, must start with '/' and end without '/'
+  serve_addr: '0.0.0.0:10000' # serve address, must be ip:port
+logger:
+  log_to_file: true # log to file, set to false means log to stdout
+  log_split: true # split log file by day, log file name will be like '2021-01-01_stdout.jsonl'
+  log_directory: './log' # log directory, must be created before starting, or it will panic the program
+  log_level: 'info' # enum: debug, info, warn, error, panic, fatal
+  log_file_suffix: '_stdout.jsonl' # log file suffix, must start with '_' and end with extension
+database:
+  driver: '' # enum: mysql(>= 5.7), postgres(>= 9.6), sqlite(>= 3.9)
+  host: '' # example: db.yourdomain.com, 192.168.1.1, ./data/sqlite.db(only for sqlite)
+  port: 0 # example: 3306, 5432, 0(only for sqlite)
+  username: '' # example: root, postgres (empty only for sqlite)
+  password: '' # example: 123456, empty(only for sqlite)
+  database: '' # example: test, empty(only for sqlite)
+  location: 'UTC' # database location, must be a valid location, default is Asia/Shanghai, if you use docker, set it to UTC

@@ -1,0 +1,14 @@
+run:
+  tests: false
+linters:
+  enable:
+    - gofumpt
+    - errcheck
+    - gocyclo
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+  disable:
+    - unused
+    - typecheck
