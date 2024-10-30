@@ -3,6 +3,7 @@ package router
 import (
 	"alioth-app-template/app/api"
 	"alioth-app-template/app/entity"
+
 	"github.com/alioth-center/infrastructure/network/http"
 )
 

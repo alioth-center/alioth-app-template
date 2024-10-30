@@ -1,6 +1,9 @@
 package global
 
 import (
+	"path/filepath"
+	"time"
+
 	"github.com/alioth-center/infrastructure/config"
 	"github.com/alioth-center/infrastructure/database"
 	"github.com/alioth-center/infrastructure/database/mysql"
@@ -8,8 +11,6 @@ import (
 	"github.com/alioth-center/infrastructure/database/sqlite"
 	"github.com/alioth-center/infrastructure/logger"
 	"github.com/alioth-center/infrastructure/utils/values"
-	"path/filepath"
-	"time"
 )
 
 var syncModels = []any{

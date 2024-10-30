@@ -3,6 +3,7 @@ package api
 import (
 	"alioth-app-template/app/entity"
 	"alioth-app-template/app/service"
+
 	"github.com/alioth-center/infrastructure/network/http"
 )
 

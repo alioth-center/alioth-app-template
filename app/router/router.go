@@ -2,6 +2,7 @@ package router
 
 import (
 	"alioth-app-template/app/global"
+
 	"github.com/alioth-center/infrastructure/network/http"
 )
 
